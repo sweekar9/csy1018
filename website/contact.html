@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<header>
+	<div class="heading">
+	<ul>
+		<li><a href="index.html">Index</a></li>
+		<li><a href="bio.html">Bio</a></li>
+	    <li><a href="collection.html">Collection</a></li>
+		<li class="contact"><a href="contact.html">Contact</a></li>
+	</ul>
+</div>
+</header>
+<body>
+<div class="contact-form" >
+		<form name="f1" onSubmit=valid()>
+			<marquee><h1> Contact Contains Here!!!</h1></marquee>
+
+	Name:<input type="text" name="nam" placeholder="Enter your Name Here!!" size="48" onclick='valid()'><br><br>
+	Age:
+	<select>
+		<option>10-17
+			<option>18-35
+
+			<option>36-55
+				<option>56-70
+
+
+	</select><br><br>
+
+	Gender<br>
+	<input type="radio" name=r1="on">Male
+	<input type="radio" name=r1="on">Female
+	<input type="radio" name=r1="on">Others<br><br>
+	Email:<input type="Email" name="email" placeholder="Enter Your Name or Phone Number Here!!" size="48"><br><br>
+	Password:<input type="Password" name="pass" placeholder="Enter Your Password!!" size="20"><br><br>
+	Telephone Number:<input type="tel" name="tel" placeholder="Enter Your Phone Number Here!!" size="34"><br><br>
+	Comment:<TEXTAREA name="Comment" placeholder="Write Your Opinion On This Section.......!!" rows=4 cols=18></TEXTAREA><br><br>
+	
+	<input type="Submit" name="b2" value="SUBMIT"<br><br><br>
+	<Script Language="JavaScript">
+		
+		function valid()
+		{
+		if (document.f1.nam.value.length<1) 
+		{
+			alert('Please enter you name');
+			return false;
+		}
+		if (document.f1.email.value.length<1) 
+		{
+			alert('Please enter you email');
+			return false;
+		}
+		if (document.f1.pass.value.length<1) 
+		{
+			alert('Please enter you password');
+			return false;
+		}
+		if (document.f1.tel.value.length<1) 
+		{
+			alert('Please enter your telephone number or phone number');
+			return false;
+		}
+		confirm('are you sure to submit');
+		return true;
+		
+
+	}
+
+
+	</Script>
+
+
+</form>
+	</div>
+	<div class="icon1">
+			<a href="https://www.facebook.com/sweekar9"><img src="facebook.PNG"></a>
+		</div>
+			<div class="icon2">
+			<a href="https://www.instagram.com/sweekar_ghimire/"><img src="instagram.PNG" ></a> 
+		</div>
+
+</body>
+<footer>
+
+			<a>Sweekar Ghimire<br>Email: ghimiresweekar@gmail.com<br>Phone Number: 9824331545<br><br></a><a href="bio.html">&copycopyright,Sweekar Ghimire</a>
+	<ul>
+		<li><a href="index.html">Index</a></li>
+		<li><a href="bio.html">Bio</a></li>
+	    <li><a href="collection.html">Collection</a></li>
+		<li class="contact"><a href="contact.html">Contact</a></li>
+	</ul>
+
+</footer>
+</html>
